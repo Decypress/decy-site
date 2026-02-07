@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>decypress</title>
+		<link rel="stylesheet" href="/decystyle.css">
+	</head>
+	<body>
+		<div class="sidebar">
+			<h1><a href="/index.html">decypress</a></h1>
+			- RECENT POSTS -
+			{% for post in collections.posts %}
+				<h2><a href="{{post.url}}">{{post.data.pageTitle}}</a></h2>
+				<em>{{post.date | date: "%Y-%m-%d" }}</em>
+			{% endfor %}
+		</div>
+
+		<div class="content">
+			<h1>{{pageTitle}}</h1>
+			
+			{{ content }}
+			
+		</div>
+	</body>
+</html>

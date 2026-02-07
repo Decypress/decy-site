@@ -1,0 +1,1 @@
+start powershell -Command "git commit -a -m 'Updating site'; git push"
