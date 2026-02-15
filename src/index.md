@@ -1,11 +1,11 @@
 ---
-layout: base.njk
-pageTitle: Welcome
+layout: homepage.njk
+pageTitle: index
 ---
 
 # Welcome
 
-... to decy's website! It's barely working
+... to decy's website! It's barely working!!!
 
 ## Banana
 

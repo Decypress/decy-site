@@ -4,18 +4,18 @@ html {
 }
 
 body {
-	background-color: #111111;
+	background-color: #000000;
 	background-image: url('/images/bg_img.png');
 	background-attachment: fixed;
 	margin: auto;
-	width: 1080px;
+	width: 100%;
+	max-width:1080px;
 	color: white;
 }
 
 p {
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 450;
+  font-family: "Noto Sans";
+  font-size: 13pt;
   font-style: normal;
   word-break: break-word;
 }
@@ -41,14 +41,11 @@ em {
 h1 {
 	color: #FFFFFF;
 	text-align: center;
-	font-family: "Lilita One", sans-serif;
-	font-optical-sizing: auto;
-	font-weight:200;
-	font-style: normal;
+	font-family: "Alegreya";
 }
 
 h2 {
-	font-family: "Lilita One", sans-serif;
+	font-family: "Alegreya";
 	font-optical-sizing: auto;
 	font-weight:200;
 	font-style: normal;
@@ -96,6 +93,10 @@ h2 {
 	/*background-image: url('/images/bg_main.png');*/
 	background-repeat: repeat-y;
 	background-size: 75px;
+}
+
+.pageBoxMainbar > h2 {
+	padding-left: 2%;
 }
 
 .pageBoxMainbar > p {

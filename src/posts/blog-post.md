@@ -1,5 +1,5 @@
 ---
-"pageTitle": Blog Post 1
-"tags": ["posts"]
+tags: "posts"
+"pageTitle": "Blog Post 1"
 ---
 A paragraph

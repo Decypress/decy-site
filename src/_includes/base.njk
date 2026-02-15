@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<link rel="stylesheet" href="{{ 'static/css/decystyle.css' | url }}" media="screen" />
+	<link rel="stylesheet" href="{{ '/static/css/decystyle.css' | url }}" media="screen" />
     <meta charset="utf-8" />
     <title>Decypress - {{ pageTitle }}</title>
   </head>
 	<body>
-		{{content|safe}}
+		<div class="pageBox">
+			<div class="pageBoxSidebar">
+				<a href="/index.html"><h1>decypress</h1></a>
+				{% for item in collections.posts %}
+					<h2><a href="{{item.url}}">{{item.data.pageTitle}}</a></h2>
+				{% else %}
+				<p>no posts :(</p>
+				{% endfor %}
+			</div>
+			<div class="pageBoxMainbar">
+				{{content|safe}}
+			</div>
+		</div>
 	</body>
 </html>

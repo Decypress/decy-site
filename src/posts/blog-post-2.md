@@ -1,5 +1,5 @@
 ---
-pageTitle: Blog Post 2
+pageTitle: "Blog Post 2"
 ---
 This is another paragraph! Blah blah Blah
 
